@@ -4,7 +4,7 @@ const CardPortofolio = (props) => {
     <img
       src={image}
       alt="portofolio"
-      className="w-60 h-30 m-2 md:m-3 rounded-lg shadow-lg transition-transform hover:scale-105"
+      className="w-60 h-30 m-2 md:m-3 rounded-lg shadow-lg object-cover transition-transform hover:scale-125 lg:hover:scale-110 "
       id={id}
     />
   );
