@@ -27,7 +27,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="#contactme"
               draggable="false"
               className="hover:text-zinc-800 hover:font-semibold transition duration-300 ease-in-out"
             >
