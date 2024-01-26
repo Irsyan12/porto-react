@@ -1,9 +1,17 @@
+import { useContext } from "react";
+import { DarkMode } from "../context/DarkMode";
 import Skill from "./Fragments/Skill";
 
 const Skills = () => {
+  const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
+
   return (
     <>
-      <h1 className="text-2xl font-bold text-zinc-600 justify-center mt-10 text-center">
+      <h1
+        className={`text-2xl font-bold  justify-center mt-10 text-center ${
+          isDarkMode ? "text-zinc-300" : "text-zinc-600"
+        }`}
+      >
         Skills
       </h1>
       <div className="justify-center items-center mt-10 w-4/6 mx-auto md:flex md:flex-row md:w-full md:justify-center md:space-x-36">

@@ -5,10 +5,11 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { DarkMode } from "../context/DarkMode";
 
 const About = () => {
-
+  const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
   const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
@@ -29,9 +30,10 @@ const About = () => {
 
   return (
     <>
-      <div className="mx-auto mt-10 w-3/4 flex flex-col bg-white sm:mt-15">
+      <div className="mx-auto mt-10 w-3/4 flex flex-col sm:mt-15">
         <img
           src="pp.jpg"
+          style={{ userSelect: "none" }}
           alt="Profile Picture"
           className={`w-32 mx-auto rounded-full sm:w-16 sm:mx-0 md:mx-0 lg:mx-0 lg:mt-5 shadow-lg transition-transform ${
             scrolling ? "scale-50" : "scale-100"
@@ -39,19 +41,28 @@ const About = () => {
           draggable="false"
         />
         <div className="mt-4 ">
-          <h3 className="text-center sm:text-left lg:text-xl sm:text-lg text-slate-700 font-semibold">
+          <h3
+            className={`text-center sm:text-left lg:text-xl sm:text-lg  font-semibold ${
+              isDarkMode ? "text-slate-300" : "text-slate-700"
+            }`}
+            style={{ userSelect: "none" }}
+          >
             Irsyan Ramadhan
           </h3>
           <h1
             id="developer-title"
-            className="text-center text-xl sm:text-left sm:text-2xl md:text-4xl lg:text-5xl  mt-2 font-bold text-slate-700"
+            className={`text-center text-xl sm:text-left sm:text-2xl md:text-4xl lg:text-5xl  mt-2 font-bold ${
+              isDarkMode ? "text-slate-300" : "text-slate-700"
+            }`}
             style={{ userSelect: "none" }}
           >
             Web & Mobile Developer
           </h1>
         </div>
         <p
-          className="text-sm font-normal sm:text-base md:text-lg text-center sm:text-left md:w-3/4 lg:w-3/5 mt-4 text-slate-600 text-md"
+          className={`text-sm font-normal sm:text-base md:text-lg text-center sm:text-left md:w-3/4 lg:w-3/5 mt-4 text-md ${
+            isDarkMode ? "text-slate-300" : "text-slate-600"
+          }`}
           draggable="false"
           style={{ userSelect: "none" }}
           onCopy={(e) => e.preventDefault()}
@@ -67,7 +78,9 @@ const About = () => {
             <FontAwesomeIcon
               icon={faInstagram}
               size="lg"
-              className="hover:text-slate-800 transition duration-300 ease-in-out text-slate-500"
+              className={`transition duration-300 ease-in-out text-slate-500 ${
+                isDarkMode ? "hover:text-slate-300" : "hover:text-slate-800"
+              }`}
             />
           </a>
 
@@ -75,7 +88,9 @@ const About = () => {
             <FontAwesomeIcon
               icon={faGithub}
               size="lg"
-              className="hover:text-slate-800 transition duration-300 ease-in-out text-slate-500"
+              className={`transition duration-300 ease-in-out text-slate-500 ${
+                isDarkMode ? "hover:text-slate-300" : "hover:text-slate-800"
+              }`}
             />
           </a>
 
@@ -83,7 +98,9 @@ const About = () => {
             <FontAwesomeIcon
               icon={faLinkedin}
               size="lg"
-              className="hover:text-slate-800 transition duration-300 ease-in-out text-slate-500"
+              className={`transition duration-300 ease-in-out text-slate-500 ${
+                isDarkMode ? "hover:text-slate-300" : "hover:text-slate-800"
+              }`}
             />
           </a>
 
@@ -91,7 +108,9 @@ const About = () => {
             <FontAwesomeIcon
               icon={faEnvelope}
               size="lg"
-              className="hover:text-slate-800 transition duration-300 ease-in-out text-slate-500"
+              className={`transition duration-300 ease-in-out text-slate-500 ${
+                isDarkMode ? "hover:text-slate-300" : "hover:text-slate-800"
+              }`}
             />
           </a>
         </div>

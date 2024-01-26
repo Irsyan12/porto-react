@@ -1,9 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMap } from "@fortawesome/free-regular-svg-icons";
+import { DarkMode } from "../context/DarkMode";
+import { useContext } from "react";
 
 const Maps = () => {
+  const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
+
   return (
-    <div className="px-3 py-5 rounded-lg mx-auto w-5/6 border shadow-sm shadow-zinc-200 mb-20 md:w-5/12 md:p-7">
+    <div className="px-4 py-6 rounded-lg mx-auto w-full md:w-5/12 lg:w-4/12 border shadow-sm shadow-zinc-200 mb-8 lg:p-8">
       <ul className="flex flex-col space-y-4">
         <li className="flex flex-row">
           <FontAwesomeIcon
