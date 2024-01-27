@@ -1,20 +1,26 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import { DarkMode } from "../context/DarkMode";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function NavBar2() {
+  const { isDarkMode, setIsDarkMode } = useContext(DarkMode);
 
   return (
     <Menu
       as="div"
-      className={`inline-flex ml-auto mx-2 mt-5  text-left sm:hidden`}
+      className={`inline-flex ml-auto mx-2 mt-8  text-left sm:hidden`}
     >
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-full bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm shadow-xl ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+        <Menu.Button
+          className={`inline-flex w-full justify-center gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold ring-gray-200 shadow-sm shadow-xl ring-1 ring-inset  ${
+            isDarkMode ? "bg-zinc-800 text-white " : "bg-white text-gray-900"
+          } `}
+        >
           Menu
           <ChevronDownIcon
             className="-mr-1 h-5 w-5 text-gray-400"
@@ -33,7 +39,9 @@ export default function NavBar2() {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items
-          className={`absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
+          className={`absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${
+            isDarkMode ? "bg-zinc-800 text-white" : "bg-white text-gray-700"
+          }`}
         >
           <div className="py-1">
             <Menu.Item>
@@ -41,7 +49,7 @@ export default function NavBar2() {
                 <a
                   href="#"
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active ? "bg-gray-100 text-gray-900" : "",
                     "block px-4 py-2 text-sm"
                   )}
                 >
@@ -54,7 +62,7 @@ export default function NavBar2() {
                 <a
                   href="#certification"
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active ? "bg-gray-100 text-gray-900" : "",
                     "block px-4 py-2 text-sm"
                   )}
                 >
@@ -67,7 +75,7 @@ export default function NavBar2() {
                 <a
                   href="#"
                   className={classNames(
-                    active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                    active ? "bg-gray-100 text-gray-900" : "",
                     "block px-4 py-2 text-sm"
                   )}
                 >
