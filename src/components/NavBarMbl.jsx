@@ -17,7 +17,7 @@ export default function NavBar2() {
     >
       <div>
         <Menu.Button
-          className={`inline-flex w-full justify-center gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold ring-gray-200 shadow-sm shadow-xl ring-1 ring-inset  ${
+          className={`inline-flex w-full justify-center gap-x-1.5 rounded-full px-3 py-2 text-sm font-semibold ring-gray-700 shadow-sm shadow-xl ring-1 ring-inset  ${
             isDarkMode ? "bg-zinc-800 text-white " : "bg-white text-gray-900"
           } `}
         >

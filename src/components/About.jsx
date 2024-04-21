@@ -56,7 +56,7 @@ const About = () => {
             }`}
             style={{ userSelect: "none" }}
           >
-            Web & Mobile Developer
+            Web & Mobile Enthusiast
           </h1>
         </div>
         <p
