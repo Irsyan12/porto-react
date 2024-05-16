@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, built using React, Vite, and Tailwind CSS. This site showcases my skills, certifications, and ways to get in touch with me.
 
-![Website Preview](https://irsyanrmdhn.netlify.app/preview.png)
+![Website Preview](https://irsyanrmdhn.netlify.app)
 
 ## 🌟 Features
 
@@ -57,10 +57,10 @@ Ensure you have Node.js and npm installed on your machine.
 ## 📸 Screenshots
 
 ### Light Mode
-![Light Mode](https://irsyanrmdhn.netlify.app/lightmode.png)
+![Light Mode](https://irsyanrmdhn.netlify.app/)
 
 ### Dark Mode
-![Dark Mode](https://irsyanrmdhn.netlify.app/darkmode.png)
+![Dark Mode](https://irsyanrmdhn.netlify.app/)
 
 ## 🌐 Live Demo
 
@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Irsyan Ramadhan - [@yourtwitterhandle](https://twitter.com/yourtwitterhandle) - irsyanramadhan72@gmail.com
+Irsyan Ramadhan - [irsan.rmd_](https://instagram.com/irsan.rmd_) - irsyanramadhan72@gmail.com
 
 Project Link: [https://github.com/username/irsyanrmdhn-portfolio]([https://github.com/username/irsyanrmdhn-portfolio](https://github.com/Irsyan12/porto-react/edit/master/README.md))
 
