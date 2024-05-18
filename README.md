@@ -2,7 +2,6 @@
 
 Welcome to my personal portfolio website, built using React, Vite, and Tailwind CSS. This site showcases my skills, certifications, and ways to get in touch with me.
 
-![Website Preview](https://irsyanrmdhn.netlify.app)
 
 ## 🌟 Features
 
@@ -32,11 +31,11 @@ Ensure you have Node.js and npm installed on your machine.
 
 1. **Clone the repo**
     ```sh
-    git clone https://github.com/username/irsyanrmdhn-portfolio.git
+    git clone https://github.com/Irsyan12/porto-react.git
     ```
 2. **Navigate to the project directory**
     ```sh
-    cd irsyanrmdhn-portfolio
+    cd porto-react
     ```
 3. **Install NPM packages**
     ```sh
@@ -57,10 +56,16 @@ Ensure you have Node.js and npm installed on your machine.
 ## 📸 Screenshots
 
 ### Light Mode
-![Light Mode](https://irsyanrmdhn.netlify.app/)
+<div style="display: flex;">
+  <img src="screenshots/lightMode2.png" alt="lightmodehp" style="height: 350px; margin-right: 200px;">
+  <img src="screenshots/lightMode1.png" alt="darkmodedtp" style="height: 350px;">
+</div>
 
 ### Dark Mode
-![Dark Mode](https://irsyanrmdhn.netlify.app/)
+<div style="display: flex;">
+  <img src="screenshots/darkMode2.png" alt="darkmodehp" style="height: 350px; margin-right: 200px;">
+  <img src="screenshots/darkMode1.png" alt="darkmodedtp" style="height: 350px;">
+</div>
 
 ## 🌐 Live Demo
 
@@ -84,7 +89,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Irsyan Ramadhan - [irsan.rmd_](https://instagram.com/irsan.rmd_) - irsyanramadhan72@gmail.com
 
-Project Link: [https://github.com/username/irsyanrmdhn-portfolio]([https://github.com/username/irsyanrmdhn-portfolio](https://github.com/Irsyan12/porto-react/edit/master/README.md))
+Project Link: [https://github.com/Irsyan12/porto-react.git]([https://github.com/Irsyan12/porto-react.git](https://github.com/Irsyan12/porto-react/edit/master/README.md))
 
 ---
 
